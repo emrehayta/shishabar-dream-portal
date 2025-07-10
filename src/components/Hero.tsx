@@ -37,17 +37,17 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              LOUNGE
+              TAXIM
             </span>
             <br />
-            <span className="bg-gradient-gold bg-clip-text text-transparent">
-              MYSTIQUE
+            <span className="text-foreground">
+              SHISHA BAR
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Experience the ultimate shisha lounge where luxury meets tradition. 
-            Immerse yourself in exotic flavors and atmospheric elegance.
+            Welcome to Taxim Shisha Bar - where authentic flavors meet modern comfort. 
+            Enjoy premium shisha, refreshing drinks, and delicious treats in our welcoming atmosphere.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -60,7 +60,7 @@ const Hero = () => {
               Explore Menu
             </Button>
             <Button 
-              variant="gold" 
+              variant="red" 
               size="lg"
               className="text-lg px-8 py-4"
             >

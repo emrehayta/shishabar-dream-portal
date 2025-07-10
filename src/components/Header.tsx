@@ -17,10 +17,11 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <Sparkles className="h-8 w-8 text-primary animate-glow" />
-          <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            LOUNGE MYSTIQUE
-          </h1>
+          <img 
+            src="/lovable-uploads/307a05a7-a5ac-4293-b708-1d61df5b9890.png" 
+            alt="Taxim Logo" 
+            className="h-8 w-auto"
+          />
         </div>
 
         {/* Desktop Navigation */}
@@ -49,7 +50,7 @@ const Header = () => {
           >
             Contact
           </button>
-          <Button variant="gold" size="sm">
+          <Button variant="red" size="sm">
             Reserve Table
           </Button>
         </nav>
@@ -93,7 +94,7 @@ const Header = () => {
             >
               Contact
             </button>
-            <Button variant="gold" size="sm" className="self-start">
+            <Button variant="red" size="sm" className="self-start">
               Reserve Table
             </Button>
           </nav>

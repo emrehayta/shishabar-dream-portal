@@ -7,32 +7,32 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      details: "123 Mystique Street, City Center, 12345",
+      details: "Your City Center Location",
       action: "Get Directions"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "+1 (555) 123-4567",
+      details: "+49 (0) 123 456 789",
       action: "Call Now"
     },
     {
       icon: Mail,
       title: "Email", 
-      details: "info@loungemystique.com",
+      details: "info@taximshishabar.com",
       action: "Send Email"
     },
     {
       icon: Clock,
       title: "Hours",
-      details: "Mon-Thu: 6PM-2AM\nFri-Sat: 6PM-3AM\nSun: 6PM-1AM",
+      details: "Mon-Thu: 5PM-1AM\nFri-Sat: 5PM-2AM\nSun: 5PM-12AM",
       action: "View Schedule"
     }
   ];
 
   const socialLinks = [
-    { icon: Instagram, name: "Instagram", handle: "@loungemystique" },
-    { icon: Facebook, name: "Facebook", handle: "Lounge Mystique" }
+    { icon: Instagram, name: "Instagram", handle: "@taximshishabar" },
+    { icon: Facebook, name: "Facebook", handle: "Taxim Shisha Bar" }
   ];
 
   return (
@@ -41,12 +41,12 @@ const Contact = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Visit Us
+              Visit Taxim
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Experience the magic of Lounge Mystique. Reserve your table today and 
-            immerse yourself in an evening of luxury and relaxation.
+            Come and experience the authentic atmosphere of Taxim Shisha Bar. 
+            Reserve your table today for an unforgettable evening with friends.
           </p>
         </div>
 
@@ -74,15 +74,15 @@ const Contact = () => {
 
         {/* Reservation Section */}
         <Card className="p-8 bg-gradient-card border-primary/20 text-center mb-12">
-          <h3 className="text-3xl font-bold mb-4 bg-gradient-gold bg-clip-text text-transparent">
+          <h3 className="text-3xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
             Make a Reservation
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Reserve your table in advance to guarantee the perfect spot for your evening. 
-            Our premium seating areas offer the ultimate in comfort and atmosphere.
+            Come and enjoy our welcoming atmosphere with premium shisha and delicious drinks.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="gold" size="lg" className="text-lg">
+            <Button variant="red" size="lg" className="text-lg">
               Reserve Online
             </Button>
             <Button variant="hero" size="lg" className="text-lg">
@@ -93,7 +93,7 @@ const Contact = () => {
 
         {/* Social Media */}
         <div className="text-center">
-          <h3 className="text-2xl font-bold mb-6 text-teal">Follow Our Journey</h3>
+          <h3 className="text-2xl font-bold mb-6 text-primary">Follow Our Journey</h3>
           <div className="flex justify-center gap-6">
             {socialLinks.map((social, index) => (
               <Card 

@@ -31,12 +31,12 @@ const About = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              About Our Lounge
+              About Taxim
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Lounge Mystique offers an unparalleled shisha experience in an atmosphere of refined elegance. 
-            Our expert staff and premium selection ensure every visit is extraordinary.
+            Taxim Shisha Bar offers an authentic experience with premium shisha, delicious drinks, 
+            and a warm, welcoming atmosphere where friends gather to relax and enjoy.
           </p>
         </div>
 
@@ -66,14 +66,13 @@ const About = () => {
           <Card className="p-8 bg-gradient-card border-primary/20 max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-1 text-left">
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-gold bg-clip-text text-transparent">
+                <h3 className="text-2xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
                   Our Story
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Founded with a passion for bringing authentic Middle Eastern culture to our community, 
-                  Lounge Mystique combines traditional shisha craftsmanship with modern luxury. Every detail, 
-                  from our handpicked tobacco blends to our carefully curated ambiance, reflects our commitment 
-                  to providing an extraordinary experience that transports you to another world.
+                  Taxim Shisha Bar brings together the best of traditional shisha culture with modern hospitality. 
+                  We pride ourselves on quality service, fresh flavors, and creating a space where everyone feels welcome. 
+                  Whether you're here for a quick drink or a long evening with friends, our team ensures every visit is memorable.
                 </p>
               </div>
               <div className="flex-shrink-0">

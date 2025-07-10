@@ -54,11 +54,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				gold: {
-					DEFAULT: 'hsl(var(--gold))',
-					dark: 'hsl(var(--gold-dark))'
+					DEFAULT: 'hsl(var(--gold))'
 				},
-				teal: 'hsl(var(--teal))',
-				'purple-deep': 'hsl(var(--purple-deep))',
+				'red-bright': 'hsl(var(--red-bright))',
+				'red-dark': 'hsl(var(--red-dark))',
+				'dark-brown': 'hsl(var(--dark-brown))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -128,7 +128,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-red': 'var(--gradient-red)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)'
 			},
