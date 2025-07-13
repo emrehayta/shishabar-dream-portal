@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Crown, Heart, Users, Clock } from "lucide-react";
+import aboutImage from "@/assets/about-interior.jpg";
 
 const About = () => {
   const features = [
@@ -76,8 +77,12 @@ const About = () => {
                 </p>
               </div>
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 rounded-full bg-gradient-primary flex items-center justify-center shadow-glow">
-                  <Crown className="h-16 w-16 text-foreground" />
+                <div className="w-48 h-32 rounded-lg overflow-hidden shadow-glow">
+                  <img 
+                    src={aboutImage} 
+                    alt="Taxim Lounge Interior" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>

@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GlassWater, Coffee, IceCream, Droplets, Sparkles } from "lucide-react";
+import menuImage from "@/assets/menu-drinks.jpg";
+import socialImage from "@/assets/social-area.jpg";
 
 const Menu = () => {
   const limoFlavors = [
@@ -262,6 +264,16 @@ const Menu = () => {
         </div>
 
         <div className="text-center">
+          <div className="mb-8">
+            <div className="w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-glow mb-8">
+              <img 
+                src={menuImage} 
+                alt="Premium Shisha und Getränke" 
+                className="w-full h-64 object-cover"
+              />
+            </div>
+          </div>
+          
           <p className="text-muted-foreground mb-6">
             Alle Shisha-Sessions beinhalten kostenlosen Kohlewechsel und Expertenservice
           </p>
