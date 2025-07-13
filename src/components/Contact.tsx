@@ -6,27 +6,27 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Location",
-      details: "Your City Center Location",
-      action: "Get Directions"
+      title: "Standort",
+      details: "Ihr Standort im Stadtzentrum",
+      action: "Route anzeigen"
     },
     {
       icon: Phone,
-      title: "Phone",
+      title: "Telefon",
       details: "+49 (0) 123 456 789",
-      action: "Call Now"
+      action: "Jetzt anrufen"
     },
     {
       icon: Mail,
-      title: "Email", 
+      title: "E-Mail", 
       details: "info@taximshishabar.com",
-      action: "Send Email"
+      action: "E-Mail senden"
     },
     {
       icon: Clock,
-      title: "Hours",
-      details: "Mon-Thu: 5PM-1AM\nFri-Sat: 5PM-2AM\nSun: 5PM-12AM",
-      action: "View Schedule"
+      title: "Öffnungszeiten",
+      details: "Mo-Do: 17:00-01:00\nFr-Sa: 17:00-02:00\nSo: 17:00-00:00",
+      action: "Zeitplan anzeigen"
     }
   ];
 
@@ -41,12 +41,12 @@ const Contact = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Visit Taxim
+              Besuchen Sie Taxim
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Come and experience the authentic atmosphere of Taxim Shisha Bar. 
-            Reserve your table today for an unforgettable evening with friends.
+            Kommen Sie und erleben Sie die authentische Atmosphäre der Taxim Shisha Bar. 
+            Reservieren Sie heute Ihren Tisch für einen unvergesslichen Abend mit Freunden.
           </p>
         </div>
 
@@ -75,25 +75,25 @@ const Contact = () => {
         {/* Reservation Section */}
         <Card className="p-8 bg-gradient-card border-primary/20 text-center mb-12">
           <h3 className="text-3xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Make a Reservation
+            Reservierung vornehmen
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Reserve your table in advance to guarantee the perfect spot for your evening. 
-            Come and enjoy our welcoming atmosphere with premium shisha and delicious drinks.
+            Reservieren Sie Ihren Tisch im Voraus, um den perfekten Platz für Ihren Abend zu garantieren. 
+            Kommen Sie und genießen Sie unsere einladende Atmosphäre mit Premium-Shisha und köstlichen Getränken.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="red" size="lg" className="text-lg">
-              Reserve Online
+              Online reservieren
             </Button>
             <Button variant="hero" size="lg" className="text-lg">
-              Call to Reserve
+              Anrufen zum Reservieren
             </Button>
           </div>
         </Card>
 
         {/* Social Media */}
         <div className="text-center">
-          <h3 className="text-2xl font-bold mb-6 text-primary">Follow Our Journey</h3>
+          <h3 className="text-2xl font-bold mb-6 text-primary">Folgen Sie unserer Reise</h3>
           <div className="flex justify-center gap-6">
             {socialLinks.map((social, index) => (
               <Card 
@@ -116,8 +116,8 @@ const Contact = () => {
         <div className="mt-12 text-center">
           <Card className="p-6 bg-primary/5 border-primary/20">
             <p className="text-muted-foreground">
-              <span className="font-semibold text-primary">Age Restriction:</span> 18+ only. 
-              Valid ID required for entry. We promote responsible enjoyment in a sophisticated environment.
+              <span className="font-semibold text-primary">Altersbeschränkung:</span> Nur ab 18 Jahren. 
+              Gültiger Ausweis erforderlich für den Einlass. Wir fördern verantwortlichen Genuss in gehobener Umgebung.
             </p>
           </Card>
         </div>

@@ -46,8 +46,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Welcome to Taxim Shisha Bar - where authentic flavors meet modern comfort. 
-            Enjoy premium shisha, refreshing drinks, and delicious treats in our welcoming atmosphere.
+            Willkommen in der Taxim Shisha Bar - wo authentische Aromen auf modernen Komfort treffen. 
+            Genießen Sie Premium-Shisha, erfrischende Getränke und köstliche Leckereien in unserer einladenden Atmosphäre.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -57,14 +57,14 @@ const Hero = () => {
               onClick={scrollToMenu}
               className="text-lg px-8 py-4"
             >
-              Explore Menu
+              Speisekarte entdecken
             </Button>
             <Button 
               variant="red" 
               size="lg"
               className="text-lg px-8 py-4"
             >
-              Reserve Now
+              Jetzt reservieren
             </Button>
           </div>
         </div>

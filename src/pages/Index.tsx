@@ -17,8 +17,8 @@ const Index = () => {
       <footer className="bg-card border-t border-border py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © 2024 Taxim Shisha Bar. All rights reserved. | 
-            <span className="text-primary"> Authentic flavors, welcoming atmosphere</span>
+            © 2024 Taxim Shisha Bar. Alle Rechte vorbehalten. | 
+            <span className="text-primary"> Authentische Aromen, einladende Atmosphäre</span>
           </p>
         </div>
       </footer>

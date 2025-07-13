@@ -6,7 +6,7 @@ const Menu = () => {
   const limoFlavors = [
     {
       name: "Classic Limo",
-      description: "Our signature refreshing lemonade",
+      description: "Unsere charakteristische erfrischende Limonade",
       price: "€5.90",
       size: "0.50L",
       icon: GlassWater,
@@ -14,14 +14,14 @@ const Menu = () => {
     },
     {
       name: "Blueberry-Limo",
-      description: "Fresh lemonade with blueberry twist",
+      description: "Frische Limonade mit Heidelbeer-Twist",
       price: "€5.90",
       size: "0.50L",
       icon: GlassWater
     },
     {
       name: "Apfel-Limo",
-      description: "Apple lemonade for a crisp taste",
+      description: "Apfel-Limonade für einen knackigen Geschmack",
       price: "€5.90",
       size: "0.50L",
       icon: GlassWater
@@ -31,31 +31,31 @@ const Menu = () => {
   const milkshakes = [
     {
       name: "Schoko",
-      description: "Rich chocolate milkshake",
+      description: "Reichhaltiger Schokoladen-Milkshake",
       price: "€5.90",
       size: "0.50L"
     },
     {
       name: "Banane",
-      description: "Creamy banana milkshake",
+      description: "Cremiger Bananen-Milkshake",
       price: "€5.90",
       size: "0.50L"
     },
     {
       name: "Erdbeere",
-      description: "Fresh strawberry milkshake",
+      description: "Frischer Erdbeer-Milkshake",
       price: "€5.90",
       size: "0.50L"
     },
     {
       name: "Kiwi",
-      description: "Tropical kiwi milkshake",
+      description: "Tropischer Kiwi-Milkshake",
       price: "€5.90",
       size: "0.50L"
     },
     {
       name: "Cocos",
-      description: "Coconut milkshake paradise",
+      description: "Kokosnuss-Milkshake Paradies",
       price: "€5.90",
       size: "0.50L"
     }
@@ -73,31 +73,31 @@ const Menu = () => {
   const shishaFlavors = [
     {
       name: "Double Apple",
-      description: "Classic sweet and tart apple blend",
+      description: "Klassische süß-saure Apfelmischung",
       price: "€25",
-      category: "Classic",
+      category: "Klassisch",
       icon: Sparkles,
       popular: true
     },
     {
       name: "Mint Fresh",
-      description: "Refreshing pure mint experience",
+      description: "Erfrischende reine Minz-Erfahrung",
       price: "€22",
-      category: "Fresh",
+      category: "Frisch",
       icon: Sparkles
     },
     {
       name: "Tropical Mix",
-      description: "Exotic fruit blend",
+      description: "Exotische Fruchtmischung",
       price: "€28",
-      category: "Tropical",
+      category: "Tropisch",
       icon: Sparkles
     },
     {
       name: "Berry Blast",
-      description: "Mixed berry sensation",
+      description: "Gemischte Beeren-Sensation",
       price: "€26",
-      category: "Fruity",
+      category: "Fruchtig",
       icon: Sparkles
     }
   ];
@@ -108,16 +108,16 @@ const Menu = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Our Menu
+              Unsere Speisekarte
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover our selection of refreshing drinks, delicious milkshakes, 
-            and premium shisha flavors at Taxim Shisha Bar.
+            Entdecken Sie unsere Auswahl an erfrischenden Getränken, köstlichen Milkshakes 
+            und Premium-Shisha-Aromen in der Taxim Shisha Bar.
           </p>
           <div className="mt-6">
             <Badge className="bg-primary/10 text-primary border-primary/20 text-lg py-2 px-4">
-              No Card - Cash Only
+              Keine Karte - Nur Barzahlung
             </Badge>
           </div>
         </div>
@@ -135,7 +135,7 @@ const Menu = () => {
               >
                 {limo.popular && (
                   <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">
-                    Popular
+                    Beliebt
                   </Badge>
                 )}
                 
@@ -176,10 +176,10 @@ const Menu = () => {
             <div className="text-center mb-4">
               <IceCream className="h-12 w-12 text-primary mx-auto mb-2" />
               <p className="text-muted-foreground">
-                All milkshakes available in the following flavors:
+                Alle Milkshakes verfügbar in folgenden Geschmacksrichtungen:
               </p>
               <p className="text-sm text-muted-foreground mt-2">
-                Mit Schlag +1,00€ (with whipped cream)
+                Mit Schlag +1,00€
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -205,7 +205,7 @@ const Menu = () => {
             <div className="text-center mb-6">
               <Droplets className="h-12 w-12 text-primary mx-auto mb-2" />
               <p className="text-muted-foreground">
-                Refreshing soda flavors to quench your thirst
+                Erfrischende Soda-Geschmäcker, um Ihren Durst zu löschen
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -235,7 +235,7 @@ const Menu = () => {
               >
                 {flavor.popular && (
                   <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">
-                    Popular
+                    Beliebt
                   </Badge>
                 )}
                 
@@ -263,17 +263,17 @@ const Menu = () => {
 
         <div className="text-center">
           <p className="text-muted-foreground mb-6">
-            All shisha sessions include complimentary coal replacement and expert service
+            Alle Shisha-Sessions beinhalten kostenlosen Kohlewechsel und Expertenservice
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <Badge className="bg-primary/10 text-primary border-primary/20">
-              Premium Quality
+              Premium-Qualität
             </Badge>
             <Badge className="bg-primary/10 text-primary border-primary/20">
-              Expert Staff
+              Expertenpersonal
             </Badge>
             <Badge className="bg-primary/10 text-primary border-primary/20">
-              Authentic Experience
+              Authentisches Erlebnis
             </Badge>
           </div>
         </div>

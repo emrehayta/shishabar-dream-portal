@@ -5,23 +5,23 @@ const About = () => {
   const features = [
     {
       icon: Crown,
-      title: "Premium Experience",
-      description: "Luxury atmosphere with the finest shisha and authentic Middle Eastern hospitality."
+      title: "Premium-Erlebnis",
+      description: "Luxuriöse Atmosphäre mit der besten Shisha und authentischer orientalischer Gastfreundschaft."
     },
     {
       icon: Heart,
-      title: "Authentic Flavors",
-      description: "Over 50 premium tobacco blends sourced from the finest producers worldwide."
+      title: "Authentische Aromen",
+      description: "Über 50 Premium-Tabakmischungen von den besten Herstellern weltweit."
     },
     {
       icon: Users,
-      title: "Social Hub",
-      description: "The perfect place to unwind with friends in a sophisticated, welcoming environment."
+      title: "Sozialer Treffpunkt",
+      description: "Der perfekte Ort, um sich mit Freunden in einer gehobenen, einladenden Umgebung zu entspannen."
     },
     {
       icon: Clock,
-      title: "Extended Hours",
-      description: "Open late to accommodate your schedule. Perfect for after-dinner relaxation."
+      title: "Erweiterte Öffnungszeiten",
+      description: "Lange geöffnet, um Ihrem Zeitplan gerecht zu werden. Perfekt für Entspannung nach dem Essen."
     }
   ];
 
@@ -31,12 +31,12 @@ const About = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              About Taxim
+              Über Taxim
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Taxim Shisha Bar offers an authentic experience with premium shisha, delicious drinks, 
-            and a warm, welcoming atmosphere where friends gather to relax and enjoy.
+            Die Taxim Shisha Bar bietet ein authentisches Erlebnis mit Premium-Shisha, köstlichen Getränken 
+            und einer warmen, einladenden Atmosphäre, in der sich Freunde zum Entspannen und Genießen treffen.
           </p>
         </div>
 
@@ -67,12 +67,12 @@ const About = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-1 text-left">
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-                  Our Story
+                  Unsere Geschichte
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Taxim Shisha Bar brings together the best of traditional shisha culture with modern hospitality. 
-                  We pride ourselves on quality service, fresh flavors, and creating a space where everyone feels welcome. 
-                  Whether you're here for a quick drink or a long evening with friends, our team ensures every visit is memorable.
+                  Die Taxim Shisha Bar vereint das Beste der traditionellen Shisha-Kultur mit moderner Gastfreundschaft. 
+                  Wir sind stolz auf unseren Qualitätsservice, frische Aromen und schaffen einen Raum, in dem sich jeder willkommen fühlt. 
+                  Ob Sie für einen schnellen Drink oder einen langen Abend mit Freunden hier sind, unser Team sorgt dafür, dass jeder Besuch unvergesslich wird.
                 </p>
               </div>
               <div className="flex-shrink-0">

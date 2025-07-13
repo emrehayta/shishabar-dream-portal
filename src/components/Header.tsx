@@ -20,7 +20,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/307a05a7-a5ac-4293-b708-1d61df5b9890.png" 
             alt="Taxim Logo" 
-            className="h-8 w-auto"
+            className="h-16 w-auto"
           />
         </div>
 
@@ -30,28 +30,28 @@ const Header = () => {
             onClick={() => scrollToSection('hero')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Home
+            Startseite
           </button>
           <button
             onClick={() => scrollToSection('about')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            About
+            Über uns
           </button>
           <button
             onClick={() => scrollToSection('menu')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Menu
+            Speisekarte
           </button>
           <button
             onClick={() => scrollToSection('contact')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Contact
+            Kontakt
           </button>
           <Button variant="red" size="sm">
-            Reserve Table
+            Tisch reservieren
           </Button>
         </nav>
 
@@ -74,28 +74,28 @@ const Header = () => {
               onClick={() => scrollToSection('hero')}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
-              Home
+              Startseite
             </button>
             <button
               onClick={() => scrollToSection('about')}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
-              About
+              Über uns
             </button>
             <button
               onClick={() => scrollToSection('menu')}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
-              Menu
+              Speisekarte
             </button>
             <button
               onClick={() => scrollToSection('contact')}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
-              Contact
+              Kontakt
             </button>
             <Button variant="red" size="sm" className="self-start">
-              Reserve Table
+              Tisch reservieren
             </Button>
           </nav>
         </div>
