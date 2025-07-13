@@ -31,8 +31,8 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Instagram, name: "Instagram", handle: "@taximshishabar" },
-    { icon: Facebook, name: "Facebook", handle: "Taxim Shisha Bar" }
+    { icon: Instagram, name: "Instagram", handle: "@taxim_lounge_wels", url: "https://www.instagram.com/taxim_lounge_wels/" },
+    { icon: Facebook, name: "Facebook", handle: "Taxim Shisha Bar", url: "#" }
   ];
 
   return (
@@ -96,18 +96,23 @@ const Contact = () => {
           <h3 className="text-2xl font-bold mb-6 text-primary">Folgen Sie unserer Reise</h3>
           <div className="flex justify-center gap-6">
             {socialLinks.map((social, index) => (
-              <Card 
+              <a 
                 key={index}
-                className="p-4 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 cursor-pointer"
+                href={social.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block"
               >
-                <div className="flex items-center gap-3">
-                  <social.icon className="h-6 w-6 text-primary" />
-                  <div className="text-left">
-                    <p className="font-semibold text-foreground">{social.name}</p>
-                    <p className="text-sm text-muted-foreground">{social.handle}</p>
+                <Card className="p-4 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <div className="flex items-center gap-3">
+                    <social.icon className="h-6 w-6 text-primary" />
+                    <div className="text-left">
+                      <p className="font-semibold text-foreground">{social.name}</p>
+                      <p className="text-sm text-muted-foreground">{social.handle}</p>
+                    </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </a>
             ))}
           </div>
         </div>
