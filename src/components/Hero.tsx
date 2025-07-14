@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Star } from "lucide-react";
-import heroImage from "@/assets/hero-lounge.jpg";
+const heroImage = "/lovable-uploads/ae6800bb-9f06-4b32-8a1b-41a33c9b6341.png";
 
 const Hero = () => {
   const scrollToMenu = () => {

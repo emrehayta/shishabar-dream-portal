@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Crown, Heart, Users, Clock } from "lucide-react";
-import aboutImage from "@/assets/about-interior.jpg";
+const aboutImage = "/lovable-uploads/57513139-ac20-4038-8474-3964a610c9c1.png";
 
 const About = () => {
   const features = [

@@ -1,8 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GlassWater, Coffee, IceCream, Droplets, Sparkles } from "lucide-react";
-import menuImage from "@/assets/menu-drinks.jpg";
-import socialImage from "@/assets/social-area.jpg";
+const menuImage = "/lovable-uploads/45cbeb98-4fcc-4006-bd0e-fdce40225160.png";
 
 const Menu = () => {
   const limoFlavors = [
@@ -265,12 +264,21 @@ const Menu = () => {
 
         <div className="text-center">
           <div className="mb-8">
-            <div className="w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-glow mb-8">
-              <img 
-                src={menuImage} 
-                alt="Premium Shisha und Getränke" 
-                className="w-full h-64 object-cover"
-              />
+            <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-8">
+              <div className="rounded-lg overflow-hidden shadow-glow">
+                <img 
+                  src={menuImage} 
+                  alt="Premium Shisha und Getränke" 
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-glow">
+                <img 
+                  src="/lovable-uploads/4adffcd8-6c50-4aad-ab7c-bcb76817583c.png" 
+                  alt="Leckere Speisen - Sandwiches und Pommes" 
+                  className="w-full h-64 object-cover"
+                />
+              </div>
             </div>
           </div>
           

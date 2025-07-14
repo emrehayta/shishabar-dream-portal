@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock, Mail, Instagram, Facebook } from "lucide-react";
-import socialImage from "@/assets/social-area.jpg";
+const socialImage = "/lovable-uploads/6cf47320-b3fe-4118-9cca-9e78edf8a4eb.png";
 
 const Contact = () => {
   const contactInfo = [
