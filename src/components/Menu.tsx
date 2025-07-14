@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GlassWater, Coffee, IceCream, Droplets, Sparkles } from "lucide-react";
-const menuImage = "/lovable-uploads/bc4756bd-af6f-4209-ad77-3cb7ac6d39b6.png";
+const menuImage = "/lovable-uploads/8812e16a-73fe-4c22-8f49-de67a358ad74.png";
 
 const Menu = () => {
   const limoFlavors = [
