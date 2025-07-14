@@ -274,8 +274,8 @@ const Menu = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-glow">
                 <img 
-                  src="/lovable-uploads/4adffcd8-6c50-4aad-ab7c-bcb76817583c.png" 
-                  alt="Leckere Speisen - Sandwiches und Pommes" 
+                  src="/lovable-uploads/bc4756bd-af6f-4209-ad77-3cb7ac6d39b6.png" 
+                  alt="Erfrischende Getränke mit Taxim-Logo" 
                   className="w-full h-64 object-cover"
                 />
               </div>
