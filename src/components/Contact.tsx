@@ -8,13 +8,13 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Standort",
-      details: "Ihr Standort im Stadtzentrum",
+      details: "Altstadt 3, 4600 Wels",
       action: "Route anzeigen"
     },
     {
       icon: Phone,
       title: "Telefon",
-      details: "+49 (0) 123 456 789",
+      details: "+43 676 5035644",
       action: "Jetzt anrufen"
     },
     {
@@ -33,7 +33,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Instagram, name: "Instagram", handle: "@taxim_lounge_wels", url: "https://www.instagram.com/taxim_lounge_wels/" },
-    { icon: Facebook, name: "Facebook", handle: "Taxim Shisha Bar", url: "#" }
+    { icon: Facebook, name: "Facebook", handle: "Taxim Shisha Bar", url: "https://www.facebook.com/taximyakamozcafelounge" }
   ];
 
   return (
@@ -47,7 +47,7 @@ const Contact = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Kommen Sie und erleben Sie die authentische Atmosphäre der Taxim Shisha Bar. 
-            Reservieren Sie heute Ihren Tisch für einen unvergesslichen Abend mit Freunden.
+            Besuchen Sie uns für einen unvergesslichen Abend mit Freunden.
           </p>
         </div>
 
@@ -72,25 +72,6 @@ const Contact = () => {
             </Card>
           ))}
         </div>
-
-        {/* Reservation Section */}
-        <Card className="p-8 bg-gradient-card border-primary/20 text-center mb-12">
-          <h3 className="text-3xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Reservierung vornehmen
-          </h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Reservieren Sie Ihren Tisch im Voraus, um den perfekten Platz für Ihren Abend zu garantieren. 
-            Kommen Sie und genießen Sie unsere einladende Atmosphäre mit Premium-Shisha und köstlichen Getränken.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="red" size="lg" className="text-lg">
-              Online reservieren
-            </Button>
-            <Button variant="hero" size="lg" className="text-lg">
-              Anrufen zum Reservieren
-            </Button>
-          </div>
-        </Card>
 
         {/* Social Media */}
         <div className="text-center">

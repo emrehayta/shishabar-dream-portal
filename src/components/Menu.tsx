@@ -211,9 +211,6 @@ const Menu = () => {
               Alkoholische Cocktails
             </h3>
             <Card className="p-6 bg-gradient-card border-primary/20">
-              <div className="text-center mb-6">
-                <p className="text-muted-foreground">€9,90 – €10,90</p>
-              </div>
               <div className="grid md:grid-cols-2 gap-4">
                 {cocktailsAlcoholic.map((cocktail, index) => (
                   <div key={index} className="p-4 bg-card/50 rounded-lg border border-primary/10">
@@ -242,9 +239,6 @@ const Menu = () => {
               Alkoholfreie Cocktails
             </h3>
             <Card className="p-6 bg-gradient-card border-primary/20">
-              <div className="text-center mb-6">
-                <p className="text-muted-foreground">€7,90 – €8,90</p>
-              </div>
               <div className="grid md:grid-cols-2 gap-4">
                 {cocktailsVirgin.map((cocktail, index) => (
                   <div key={index} className="p-4 bg-card/50 rounded-lg border border-primary/10">
@@ -266,9 +260,6 @@ const Menu = () => {
               Longdrinks
             </h3>
             <Card className="p-6 bg-gradient-card border-primary/20">
-              <div className="text-center mb-6">
-                <p className="text-muted-foreground">€4,50 – €6,00</p>
-              </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {longdrinks.map((drink, index) => (
                   <div key={index} className="flex justify-between items-center py-3 px-4 bg-card/50 rounded-lg border border-primary/10">
@@ -305,9 +296,6 @@ const Menu = () => {
               Shots
             </h3>
             <Card className="p-6 bg-gradient-card border-primary/20">
-              <div className="text-center mb-6">
-                <p className="text-muted-foreground">€3,50</p>
-              </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {shots.map((shot, index) => (
                   <div key={index} className="text-center py-3 px-4 bg-card/50 rounded-lg border border-primary/10">
@@ -343,9 +331,6 @@ const Menu = () => {
               Shisha Karte
             </h3>
             <Card className="p-6 bg-gradient-card border-primary/20">
-              <div className="text-center mb-6">
-                <p className="text-muted-foreground">je €20,00</p>
-              </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {shishaFlavors.map((flavor, index) => (
                   <div key={index} className="text-center py-3 px-4 bg-card/50 rounded-lg border border-primary/10">
