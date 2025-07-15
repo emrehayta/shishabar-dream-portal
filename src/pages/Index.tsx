@@ -20,6 +20,11 @@ const Index = () => {
             © 2024 Taxim Shisha Bar. Alle Rechte vorbehalten. | 
             <span className="text-primary"> Authentische Aromen, einladende Atmosphäre</span>
           </p>
+          <div className="mt-4">
+            <a href="/agb" className="text-muted-foreground hover:text-primary underline">
+              Allgemeine Geschäftsbedingungen
+            </a>
+          </div>
         </div>
       </footer>
     </div>
