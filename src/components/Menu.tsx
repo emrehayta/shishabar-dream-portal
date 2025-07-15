@@ -216,14 +216,16 @@ const Menu = () => {
               </div>
               <div className="grid md:grid-cols-2 gap-4">
                 {cocktailsAlcoholic.map((cocktail, index) => (
-                  <div key={index} className="p-4 bg-card/50 rounded-lg border border-primary/10 relative">
-                    {cocktail.special && (
-                      <Badge className="absolute top-2 right-2 bg-primary text-primary-foreground text-xs">
-                        Special
-                      </Badge>
-                    )}
+                  <div key={index} className="p-4 bg-card/50 rounded-lg border border-primary/10">
                     <div className="flex justify-between items-start mb-2">
-                      <h4 className="font-semibold text-foreground">{cocktail.name}</h4>
+                      <div className="flex flex-col">
+                        <h4 className="font-semibold text-foreground">{cocktail.name}</h4>
+                        {cocktail.special && (
+                          <Badge className="w-fit mt-1 bg-primary text-primary-foreground text-xs">
+                            Special
+                          </Badge>
+                        )}
+                      </div>
                       <span className="text-primary font-bold">{cocktail.price}</span>
                     </div>
                     <p className="text-sm text-muted-foreground">{cocktail.ingredients}</p>
