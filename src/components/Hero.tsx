@@ -50,7 +50,7 @@ const Hero = () => {
             Genießen Sie Premium-Shisha, erfrischende Getränke und köstliche Leckereien in unserer einladenden Atmosphäre.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center">
             <Button 
               variant="hero" 
               size="lg" 
@@ -58,13 +58,6 @@ const Hero = () => {
               className="text-lg px-8 py-4"
             >
               Speisekarte entdecken
-            </Button>
-            <Button 
-              variant="red" 
-              size="lg"
-              className="text-lg px-8 py-4"
-            >
-              Jetzt reservieren
             </Button>
           </div>
         </div>

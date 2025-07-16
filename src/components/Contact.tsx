@@ -12,18 +12,6 @@ const Contact = () => {
       action: "Route anzeigen"
     },
     {
-      icon: Phone,
-      title: "Telefon",
-      details: "+43 676 5035644",
-      action: "Jetzt anrufen"
-    },
-    {
-      icon: Mail,
-      title: "E-Mail", 
-      details: "info@taximshishabar.com",
-      action: "E-Mail senden"
-    },
-    {
       icon: Clock,
       title: "Öffnungszeiten",
       details: "Mo-Do: 17:00-01:00\nFr-Sa: 17:00-02:00\nSo: 17:00-00:00",
@@ -51,7 +39,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
           {contactInfo.map((info, index) => (
             <Card 
               key={index}
