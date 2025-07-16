@@ -48,11 +48,8 @@ const Header = () => {
             onClick={() => scrollToSection('contact')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Kontakt
+            Besuchen Sie uns
           </button>
-          <Button variant="red" size="sm">
-            Tisch reservieren
-          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -92,11 +89,8 @@ const Header = () => {
               onClick={() => scrollToSection('contact')}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
-              Kontakt
+              Besuchen Sie uns
             </button>
-            <Button variant="red" size="sm" className="self-start">
-              Tisch reservieren
-            </Button>
           </nav>
         </div>
       )}
