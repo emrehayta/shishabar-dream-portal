@@ -30,13 +30,16 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
+        <button 
+          onClick={() => handleNav("hero")}
+          className="flex items-center space-x-2 cursor-pointer"
+        >
           <img 
             src="/lovable-uploads/307a05a7-a5ac-4293-b708-1d61df5b9890.png" 
             alt="Taxim Logo" 
             className="h-16 w-auto"
           />
-        </div>
+        </button>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
