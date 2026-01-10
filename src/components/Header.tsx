@@ -8,18 +8,22 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const scrollToSection = (sectionId: string) => {
+  const handleNav = (sectionId: string) => {
     setIsMenuOpen(false);
-    
-    // If not on home page, navigate there first
+
+    // Use hash-based navigation so it also works from other routes
     if (location.pathname !== "/") {
-      navigate("/", { state: { scrollTo: sectionId } });
+      navigate(`/#${sectionId}`);
       return;
     }
-    
+
+    // Same-page scroll
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Fallback: set hash so the home page effect can handle it
+      window.location.hash = sectionId;
     }
   };
 
@@ -37,25 +41,25 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <button
-            onClick={() => scrollToSection('hero')}
+            onClick={() => handleNav("hero")}
             className="text-foreground hover:text-primary transition-colors"
           >
             Startseite
           </button>
           <button
-            onClick={() => scrollToSection('about')}
+            onClick={() => handleNav("about")}
             className="text-foreground hover:text-primary transition-colors"
           >
             Über uns
           </button>
           <button
-            onClick={() => scrollToSection('menu')}
+            onClick={() => handleNav("menu")}
             className="text-foreground hover:text-primary transition-colors"
           >
             Speisekarte
           </button>
           <button
-            onClick={() => scrollToSection('contact')}
+            onClick={() => handleNav("contact")}
             className="text-foreground hover:text-primary transition-colors"
           >
             Besuchen Sie uns
@@ -78,25 +82,25 @@ const Header = () => {
         <div className="md:hidden bg-card/95 backdrop-blur-md border-t border-border">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <button
-              onClick={() => scrollToSection('hero')}
+              onClick={() => handleNav("hero")}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
               Startseite
             </button>
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => handleNav("about")}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
               Über uns
             </button>
             <button
-              onClick={() => scrollToSection('menu')}
+              onClick={() => handleNav("menu")}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
               Speisekarte
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleNav("contact")}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
               Besuchen Sie uns
