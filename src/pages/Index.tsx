@@ -10,17 +10,17 @@ const Index = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Handle scroll to section when navigating from other pages
-    if (location.state?.scrollTo) {
-      const sectionId = location.state.scrollTo;
-      setTimeout(() => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-  }, [location.state]);
+    const sectionId = location.hash?.replace(/^#/, "");
+    if (!sectionId) return;
+
+    // Wait a tick so sections are in the DOM
+    const t = window.setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+
+    return () => window.clearTimeout(t);
+  }, [location.hash]);
 
   return (
     <div className="min-h-screen bg-background">
