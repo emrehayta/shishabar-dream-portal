@@ -55,12 +55,14 @@ const Header = () => {
           >
             Über uns
           </button>
-          <button
-            onClick={() => handleNav("menu")}
+          <a
+            href="/speisekarte.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-foreground hover:text-primary transition-colors"
           >
             Speisekarte
-          </button>
+          </a>
           <button
             onClick={() => handleNav("contact")}
             className="text-foreground hover:text-primary transition-colors"
@@ -96,12 +98,15 @@ const Header = () => {
             >
               Über uns
             </button>
-            <button
-              onClick={() => handleNav("menu")}
+            <a
+              href="/speisekarte.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-left text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
               Speisekarte
-            </button>
+            </a>
             <button
               onClick={() => handleNav("contact")}
               className="text-left text-foreground hover:text-primary transition-colors"
