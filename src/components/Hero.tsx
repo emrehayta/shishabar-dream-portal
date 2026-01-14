@@ -3,11 +3,8 @@ import { Sparkles, Star } from "lucide-react";
 const heroImage = "/lovable-uploads/ae6800bb-9f06-4b32-8a1b-41a33c9b6341.png";
 
 const Hero = () => {
-  const scrollToMenu = () => {
-    const menuSection = document.getElementById('menu');
-    if (menuSection) {
-      menuSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openMenu = () => {
+    window.open('/speisekarte.pdf', '_blank');
   };
 
   return (
@@ -54,7 +51,7 @@ const Hero = () => {
             <Button 
               variant="hero" 
               size="lg" 
-              onClick={scrollToMenu}
+              onClick={openMenu}
               className="text-lg px-8 py-4"
             >
               Speisekarte entdecken
