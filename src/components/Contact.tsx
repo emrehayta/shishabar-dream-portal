@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock, Mail, Instagram, Facebook } from "lucide-react";
-const socialImage = "/lovable-uploads/6cf47320-b3fe-4118-9cca-9e78edf8a4eb.png";
 
 const Contact = () => {
   const contactInfo = [
@@ -84,20 +83,6 @@ const Contact = () => {
         {/* Social Media */}
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-6 text-primary">Folgen Sie unserer Reise</h3>
-          
-          {/* Social Atmosphere Image */}
-          <div className="mb-8">
-            <div className="w-full max-w-3xl mx-auto rounded-lg overflow-hidden shadow-glow mb-4">
-              <img 
-                src={socialImage} 
-                alt="Gemütliche Atmosphäre in der Taxim Lounge" 
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <p className="text-muted-foreground text-sm">
-              Erleben Sie die warme, einladende Atmosphäre unserer Lounge
-            </p>
-          </div>
           
           <div className="flex justify-center gap-6">
             {socialLinks.map((social, index) => (
