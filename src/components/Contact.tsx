@@ -1,25 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Clock, Mail, Instagram, Facebook } from "lucide-react";
+import { MapPin, Instagram, Facebook } from "lucide-react";
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: "Standort",
-      details: "Altstadt 3, 4600 Wels",
-      action: "Route anzeigen",
-      href: "https://www.google.com/maps/dir/?api=1&destination=Altstadt+3,+4600+Wels,+Austria"
-    },
-    {
-      icon: Clock,
-      title: "Öffnungszeiten",
-      details: "Mo-Do: 17:00-01:00\nFr-Sa: 17:00-02:00\nSo: 17:00-00:00",
-      action: null,
-      href: null
-    }
-  ];
-
   const socialLinks = [
     { icon: Instagram, name: "Instagram", handle: "@taxim_lounge_wels", url: "https://www.instagram.com/taxim_lounge_wels/" },
     { icon: Facebook, name: "Facebook", handle: "Taxim Shisha Bar", url: "https://www.facebook.com/taximyakamozcafelounge" }
@@ -40,30 +23,21 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
-          {contactInfo.map((info, index) => (
-            <Card 
-              key={index}
-              className="p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 hover:shadow-glow text-center"
+        <div className="flex justify-center mb-12">
+          <Card className="p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 hover:shadow-glow text-center max-w-sm w-full">
+            <div className="inline-flex p-3 rounded-full bg-primary/10 border border-primary/20 mb-4">
+              <MapPin className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="text-lg font-semibold mb-3 text-foreground">Standort</h3>
+            <p className="text-muted-foreground mb-4">Altstadt 3, 4600 Wels</p>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Altstadt+3,+4600+Wels,+Austria"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <div className="inline-flex p-3 rounded-full bg-primary/10 border border-primary/20 mb-4">
-                <info.icon className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="text-lg font-semibold mb-3 text-foreground">
-                {info.title}
-              </h3>
-              <p className="text-muted-foreground mb-4 whitespace-pre-line">
-                {info.details}
-              </p>
-              {info.action && info.href && (
-                <a href={info.href} target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="sm">
-                    {info.action}
-                  </Button>
-                </a>
-              )}
-            </Card>
-          ))}
+              <Button variant="outline" size="sm">Route anzeigen</Button>
+            </a>
+          </Card>
         </div>
 
         {/* Google Maps */}
