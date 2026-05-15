@@ -54,7 +54,7 @@ const Hero = () => {
               onClick={openMenu}
               className="text-lg px-8 py-4"
             >
-              Speisekarte entdecken
+              Menükarte entdecken
             </Button>
           </div>
         </div>

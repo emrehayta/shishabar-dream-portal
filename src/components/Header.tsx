@@ -61,7 +61,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="text-foreground hover:text-primary transition-colors"
           >
-            Speisekarte
+            Menükarte
           </a>
           <button
             onClick={() => handleNav("contact")}
@@ -105,7 +105,7 @@ const Header = () => {
               className="text-left text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Speisekarte
+              Menükarte
             </a>
             <button
               onClick={() => handleNav("contact")}
