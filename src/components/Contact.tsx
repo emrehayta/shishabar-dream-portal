@@ -9,13 +9,15 @@ const Contact = () => {
       icon: MapPin,
       title: "Standort",
       details: "Altstadt 3, 4600 Wels",
-      action: "Route anzeigen"
+      action: "Route anzeigen",
+      href: "https://www.google.com/maps/dir/?api=1&destination=Altstadt+3,+4600+Wels,+Austria"
     },
     {
       icon: Clock,
       title: "Öffnungszeiten",
       details: "Mo-Do: 17:00-01:00\nFr-Sa: 17:00-02:00\nSo: 17:00-00:00",
-      action: "Zeitplan anzeigen"
+      action: null,
+      href: null
     }
   ];
 
@@ -54,11 +56,29 @@ const Contact = () => {
               <p className="text-muted-foreground mb-4 whitespace-pre-line">
                 {info.details}
               </p>
-              <Button variant="outline" size="sm">
-                {info.action}
-              </Button>
+              {info.action && info.href && (
+                <a href={info.href} target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm">
+                    {info.action}
+                  </Button>
+                </a>
+              )}
             </Card>
           ))}
+        </div>
+
+        {/* Google Maps */}
+        <div className="mb-12 rounded-lg overflow-hidden shadow-elegant border border-primary/20">
+          <iframe
+            title="Taxim Shisha Bar – Standort"
+            src="https://maps.google.com/maps?q=Altstadt+3,+4600+Wels,+Austria&output=embed&z=16&hl=de"
+            width="100%"
+            height="320"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
 
         {/* Social Media */}

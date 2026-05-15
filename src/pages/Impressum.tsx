@@ -15,7 +15,7 @@ const Impressum = () => {
         <Card className="p-8 bg-gradient-card border-primary/20">
           <div className="space-y-6">
             <div>
-              <h2 className="text-xl font-semibold text-primary mb-2">Angaben gemäß § 5 TMG</h2>
+              <h2 className="text-xl font-semibold text-primary mb-2">Angaben gemäß § 5 ECG</h2>
               <p className="text-muted-foreground">
                 Informationen nach der Dienstleistungs-Informationsverordnung
               </p>
@@ -42,24 +42,25 @@ const Impressum = () => {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-semibold text-foreground">Firmensitz:</h3>
-                  <p className="text-muted-foreground">4600 Wels</p>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-foreground">Vollständige geografische Anschrift:</h3>
-                  <p className="text-muted-foreground">Altstadt 3 | Austria</p>
+                  <p className="text-muted-foreground">Altstadt 3, 4600 Wels, Österreich</p>
                 </div>
 
                 <div>
                   <h3 className="font-semibold text-foreground">Kontaktdaten:</h3>
-                  <p className="text-muted-foreground">Tel: 06765035644</p>
+                  <p className="text-muted-foreground">Tel: +43 676 5035644</p>
+                  <p className="text-muted-foreground">
+                    E-Mail:{" "}
+                    <a href="mailto:okan.dogan90@icloud.com" className="hover:text-primary transition-colors">
+                      okan.dogan90@icloud.com
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="pt-6 border-t border-border">
               <p className="text-sm text-muted-foreground">
-                Informationen nach der Dienstleistungs-Informationsverordnung gemäß §§ (1) ECG, § 25 MedienG, § 63 
+                Informationen nach der Dienstleistungs-Informationsverordnung gemäß §§ (1) ECG, § 25 MedienG, § 63
                 GeWO und § 14 UGB
               </p>
             </div>
